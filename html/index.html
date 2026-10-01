@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projeto Site</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head> 
+<body>
+    <header class="header">
+        <a href="#" class="logo">TMSI</a>
+        <!-- Estrutura menu responsivo -->
+        <button class="menu-toggle" id="menuResponsivo" aria-label="Abrir-Menu"></button>
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <nav class="nav-menu" id="nav-menu">
+            <ul>
+                <li><a href="#paginaInicial">Página Inicial</a></li>
+                <li><a href="#sobre">Sobre</a></li>
+                <li><a href="#topico">Tópico</a></li>
+                <li><a href="#contatos">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section id="paginaInicial" class="carousel-section">
+        <div class="carousel-container">
+            <!-- define um bloco de conteúdo (container) que representa o primeiro slide de um carrossel -->
+            <div class="carousel-slide active slide-1">
+                <!-- criar e organizar uma seção estrutural em uma página web. -->
+                <div class="hero-content">
+                    <h1>Hardware</h1>
+                    <p>Compreender e identificar peças do computador</p>
+                    <a href="" class="btn-primary">Mais informações</a>
+                </div>
+            </div>
+        <div class="carousel-slide slide-2">
+            <div class="hero-content">
+                <h1>Design</h1>
+                <p>Desenvolvimento frontend</p>
+                <!-- tag a href determina o caminho -->
+                <a href="#" class="btn-primary">Mais informações</a>
+            </div>
+        </div>
+        <div class="carousel-slide slide-3">
+            <div class="hero-content">
+                <h1>Programação</h1>
+                <p>Codificação</p>
+                <!-- cria um botão de link em HTML para direcionar o usuário para outra seção. -->
+                <a href="#" class="btn-primary">Mais informações</a>
+            </div>
+            
+        </div>
+        <button class="carousel-btn prev-btn" id="prevBtn"><span class="botao esquerda"></span></button>
+        <button class="carousel-btn next-btn" id="nextBtn"><sapn class="botao direita"></sapn></button>
+        <div class="carousel-dots">
+            <span class="dot active" data-index="0"></span>
+            <span class="dot" data-index="1"></span>
+            <span class="dot" data-index="2"></span>
+        </div>
+
+    </section>
+    <section id="sobre" class="section">
+        <div class="container">
+            <h2>Hardware</h2>
+            <div class="grid-2-cols">
+                <div class="text-block">
+                    <p>Compreender peças físicas</p>
+                    <p>Como identificar modelo da placa-mãe</p>
+                </div>
+            
+            <div class="stats-block">
+                <div class="stat-card">
+                    <h3>33 horas</h3>
+                    <p>Carga Horária</p>
+                </div>
+                <div class="stat-card">
+                    <h3>Segundo ano</h3>
+                </div>
+            </div>
+            </div>
+        </div>
+    </section>
+    <section id="topico" class="section bg-light">
+    </section>
+            <div class="container">
+            <h2>Tópicos das Disciplinas</h2>
+            <div class="grid-3-cols">
+                <div class="card">
+                    <div class="icon">🖥️</div>
+                    <h3>Desenvolvimento Web</h3>
+                    <p>Construção de sites responsivos</p>
+                </div>
+                <div class="card">
+                    <div class="icon">🧾</div>
+                    <h3>As formas de avaliar o aluno</h3>
+                    <p>Provas e trabalhos</p>
+                </div>
+                <div class="card">
+                    <div class="icon">🕐</div>
+                    <h3>Horários de aula</h3>
+                    <p>Inicio as 08:10 e 13:10</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="contato" class="section">
+        <div class="container">
+            <h2>Mais informações sobre o curso</h2>
+            <form class="contact-form" id="contatoForm">
+                <div class="form-group">
+                    <label for="name">Nome Completo</label>
+                    <input type="text" id="name" placeholder="Informe seu nome completo">
+                </div>
+                <div class="form-group">
+                    <label for="email">E-mail</label>
+                    <input type="email" id="email" placeholder="seuemail@exemplo.com">
+                </div>
+                <div class="form-group">
+                    <label for="mensagem">Mensagem</label>
+                    <textarea id="mensagem" rows="5" placeholder="Como podemos ajudar?"></textarea>
+                </div>
+                <button type="submit" class="btn-primary">Enviar mensagem</button>
+            </form>
+        </div>
+    </section>
+</body>
+<script type="text/javascript" src="../js/script.js"></script>
+</html>
