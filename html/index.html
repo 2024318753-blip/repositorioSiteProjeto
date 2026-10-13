@@ -11,15 +11,16 @@
         <a href="#" class="logo">TMSI</a>
         <!-- Estrutura menu responsivo -->
         <!-- Para abrir no celular -->
-        <button class="menu-toggle" id="menuResponsivo" aria-label="Abrir-Menu"></button>
+        <button class="menu-toggle" id="menuResponsivo" aria-label="Abrir-Menu">
         <span class="bar"></span>
         <span class="bar"></span>
         <span class="bar"></span>
+        </button>
         <nav class="nav-menu" id="nav-menu">
             <ul>
                 <li><a href="#paginaInicial">Página Inicial</a></li>
                 <li><a href="#sobre">Sobre</a></li>
-                <li><a href="#topico">Tópico</a></li>
+                <li><a href="#topicos">Tópico</a></li>
                 <li><a href="#contatos">Contato</a></li>
             </ul>
         </nav>
@@ -82,9 +83,8 @@
             </div>
         </div>
     </section>
-    <section id="topico" class="section bg-light">
-    </section>
-            <div class="container">
+    <section id="topicos" class="section bg-light">
+        <div class="container">
             <h2>Tópicos das Disciplinas</h2>
             <div class="grid-3-cols">
                 <div class="card">
@@ -94,18 +94,18 @@
                 </div>
                 <div class="card">
                     <div class="icon">🧾</div>
-                    <h3>As formas de avaliar o aluno</h3>
-                    <p>Provas e trabalhos</p>
+                    <h3>Áudio, fotografia e audiovisual</h3>
+                    <p>Produção e edição de fotos, áudios e vídeos</p>
                 </div>
                 <div class="card">
-                    <div class="icon">🕐</div>
-                    <h3>Horários de aula</h3>
-                    <p>Inicio as 08:10 e 13:10</p>
+                    <div class="icon">🔧</div>
+                    <h3>Arquitetura de Computadores</h3>
+                    <p>Aplicação prática</p>
                 </div>
             </div>
         </div>
     </section>
-    <section id="contato" class="section">
+    <section id="contatos" class="section">
         <div class="container">
             <h2>Mais informações sobre o curso</h2>
             <form class="contact-form" id="contatoForm">
@@ -115,15 +115,20 @@
                 </div>
                 <div class="form-group">
                     <label for="email">E-mail</label>
+                    <!-- Placeholder vai mostrar no campo o que e como o usuário deve colocar sua informação -->
                     <input type="email" id="email" placeholder="seuemail@exemplo.com">
+
                 </div>
                 <div class="form-group">
                     <label for="mensagem">Mensagem</label>
                     <textarea id="mensagem" rows="5" placeholder="Como podemos ajudar?"></textarea>
+
                 </div>
                 <button type="submit" class="btn-primary">Enviar mensagem</button>
             </form>
+            
         </div>
+
     </section>
     <footer class="footer">
         <div class="container grid-footer">
@@ -134,10 +139,8 @@
         </div>
         <div class="footer-bottom">
             <p>&copy; 2026. Todos os direitos reservados</p>
-
         </div>
-
     </footer>
+    <script type="text/javascript" src="../js/script.js"></script>    
 </body>
-<script type="text/javascript" src="../js/script.js"></script>
 </html>
