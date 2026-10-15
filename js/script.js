@@ -19,9 +19,32 @@ navLinks.forEach((Link) => {
         slides.forEach((slide) => slide.classList.remove("active"));
         dots.forEach((dot) => dot.classList.remove("active"));
         slideAtual = (index + slides.length) % slides.length;
-        slides[slidesAtual].classList.add("active");
-        dots[slidesAtual].classList.add("active")
+        slides[slideAtual].classList.add("active");
+        dots[slideAtual].classList.add("active")
     }
+    function nextSlide(){
+        showSlide(slideAtual + 1);
+    }
+    function prevSlide(){
+        showSlide(slideAtual - 1);
+    }
+    function startSlide(){
+        slideIntervalo = setInterval(nextSlide,5000);
+    }
+    function stopSlide(){
+        console.log("Valor intervalo", slideIntervalo);
+        clearInterval(slideIntervalo);
+    }
+    nextBtn.addEventListener("click", ()=>{
+        nextSlide ();
+        stopSlide();
+        startSlide();
 
+    });
+    prevBtn.addEventListener("click", () => {
+        prevSlide();
+        stopSlide();
+        startSlide();
+    });
 });
 });//Final função evento carregar tudo HTML
